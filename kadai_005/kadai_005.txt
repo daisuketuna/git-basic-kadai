@@ -1,0 +1,31 @@
+PS C:\Users\daiso\Desktop\myjava> mkdir git_challenge   
+
+    Directory: C:\Users\daiso\Desktop\myjava
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          2024/08/28     8:13                git_challenge
+
+PS C:\Users\daiso\Desktop\myjava> cd git_challenge
+PS C:\Users\daiso\Desktop\myjava\git_challenge> git init
+Initialized empty Git repository in C:/Users/daiso/Desktop/myjava/git_challenge/.git/
+
+PS C:\Users\daiso\Desktop\myjava\git_challenge> echo "Hello,world!" > hello_world.txt                    
+PS C:\Users\daiso\Desktop\myjava\git_challenge> git add hello_world.txt              
+PS C:\Users\daiso\Desktop\myjava\git_challenge> git commit -m "hello_world.txtを追加"      
+[main 048c5f6] hello_world.txtを追加
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ 
+PS C:\Users\daiso\Desktop\myjava\git_challenge> echo "こんにちは、世界！" > hello_world.txt
+PS C:\Users\daiso\Desktop\myjava\git_challenge> git add hello_world.txt                    
+PS C:\Users\daiso\Desktop\myjava\git_challenge> git commit -m "日本語訳を追加"             
+[main 234c8d0] 日本語訳を追加
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ 
+
+
+PS C:\Users\daiso\Desktop\myjava\git_challenge> git log --oneline
+234c8d0 (HEAD -> main) 日本語訳を追加
+048c5f6 hello_world.txtを追加
+
+
